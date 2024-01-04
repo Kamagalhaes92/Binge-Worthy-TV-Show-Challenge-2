@@ -353,7 +353,7 @@ section .card .about {
   color: #fff;
   font-size: 40px;
   position: relative;
-  background-color: #220505;
+  background-color: #1e0505;
   height: auto;
 }
 
@@ -370,7 +370,8 @@ section .card .about {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 45%;
-  border: 5px solid rgb(179, 0, 196);
+  border: 2px solid rgb(7, 1, 1);
+  background-color: #000000;
   margin: 25px auto;
 }
 
@@ -380,11 +381,12 @@ section .card .about {
 
 .images-slider {
   width: 45%;
-  border: 5px solid white;
+  align-items: center;
+  justify-content: center;
 }
 
 .images-slider img {
-  width: 85%;
+  width: 60%;
   height: auto;
 }
 
