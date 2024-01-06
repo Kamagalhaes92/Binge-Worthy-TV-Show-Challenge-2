@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1, user-scalable=no" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -17,9 +17,7 @@
       <header>
         <nav class="navbar" id="navbar">
           <a href="/#" title="Homepage" id="homepage" class="navbar-logo"> </a>
-          <div class="hamburger" id="hamburger">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-          </div>
+          
 
           <div class="navbar-container">
             <ul class="navbar-menu" id="navbar-menu">
@@ -28,23 +26,29 @@
                   href="#homepage"
                   title="Homepage"
                   class="navbar-item-link active-by-scroll"
-                  >Home |</a
+                  >Home</a
                 >
               </li>
               <li class="navbar-item">
-                <a href="#gallery" class="navbar-item-link">Gallery | </a>
+                <a href="#cast" class="navbar-item-link">Cast</a>
               </li>
               <li class="navbar-item">
-                <a href="#trailer" class="navbar-item-link">Trailer |</a>
+                <a href="#trailer" class="navbar-item-link">Trailer</a>
               </li>
               <li class="navbar-item">
-                <a href="#actor" class="navbar-item-link">Actors |</a>
+                <a href="#gallery" class="navbar-item-link">Gallery</a>
               </li>
               <li class="navbar-item">
-                <a href="#award" class="navbar-item-link">Awards |</a>
+                <a href="#other-shows" class="navbar-item-link">Others</a>
               </li>
             </ul>
-            <div class="social-icon">
+          
+          </div>
+        </nav>
+      </header>
+      <section class="background-wrap">
+        <div class="hero-container"></div>
+         <div class="social-icon">
               <a
                 class="social-icon-link"
                 href="https://www.linkedin.com/in/karine-magalhaes-heidgerken-3836911a7/"
@@ -74,12 +78,7 @@
                 ><i class="fa-brands fa-telegram" aria-hidden="true"></i
               ></a>
             </div>
-          </div>
-        </nav>
-      </header>
-      <section class="background-wrap">
-        <div class="hero-container"></div>
-         <div class="info">
+         <div class="info" id="home">
             <div class="detail">
               Fantasy · Drama | 8 Seasons | 2009-2017 | TV-14
             </div>
@@ -139,8 +138,8 @@
       </section>
 
     
-      <section class="third-container">
-        <h2 class="cast"> Cast</h2>
+      <section class="third-container" id="cast">
+        <h2 class="cast" > Cast</h2>
             
             <div class="swiper mySwiper container">
 
@@ -257,7 +256,7 @@
         
 </div>
 
-     <div class="second-container">
+     <div class="second-container" id="trailer">
         <img src="https://64.media.tumblr.com/5d1fc34a1c44ce114ae83353bcfce5a6/tumblr_pmd6e6Ol7y1runoqyo1_540.gif" class="background" alt="">
             <div class="info-2 push-left"> 
                 <h2>The Plot</h2>
@@ -286,7 +285,7 @@
               <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
             </svg>
           </div>
-          <h2 class="gallery-heading">Gallery</h2>
+          <h2 class="gallery-heading" id="gallery">Gallery</h2>
            <div class="gallery-wrapper">
             <div class="gallery">
             <div id="slide-1" class="slide">
@@ -323,12 +322,14 @@
 
     </section>
 
-      <div class="suggestions">
-        <div class="box a">A</div>
-        <div class="box b">B</div>
-        <div class="box c">C</div>
-        <div class="box d">D</div>
-      </div>
+      <div class="scary-container">
+          <div class="big-text">
+      <hr />
+      <h2>Vampire Diaries</h2>
+      <hr />
+    </div>
+      <img src="/Binge-Worthy-TV-Show-Challenge-2/media/initial.png" alt="Initial Image" id="scrollImage">
+    </div>
       
 </div>
     <iframe style="border-radius:12px "   src="https://open.spotify.com/embed/playlist/0uI3J0ZnoHMrLEkZ7008Px?utm_source=generator&theme=0" width="100%" height="100"  frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -404,6 +405,26 @@
     window.addEventListener("scroll", appearOnScroll);
 
     // ... rest of your JavaScript code ...
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  let scaryContainer = document.querySelector('.scary-container');
+  let image = document.getElementById('scrollImage');
+
+  window.addEventListener('scroll', function () {
+    let scrollPosition = window.scrollY;
+    let containerPosition = scaryContainer.offsetTop;
+
+    if (scrollPosition >= containerPosition) {
+      // Change image and apply desired styles
+      image.src = 'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/439/original/evil.png?1704505483';
+      image.style.transform = 'scale(1.5)';
+    } else {
+      // Revert to initial state
+      image.src = 'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/437/original/initial.png?1704505475';
+      image.style.transform = 'scale(1)';
+    }
+  });
 });
 
   </script>

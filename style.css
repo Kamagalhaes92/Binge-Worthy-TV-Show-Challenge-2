@@ -11,23 +11,30 @@ a {
 }
 
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   z-index: 5;
-  padding: 30px 70px;
+  padding: 5px 0px;
 }
 .navbar-container .navbar-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 15px;
   justify-content: space-around;
+  border-radius: 8px;
+}
+
+.navbar-item {
+  padding: 5px;
+  box-shadow: 10px 10px 25px #4d4a4a;
+  border-radius: 8px;
 }
 
 .navbar .navbar-item-link {
@@ -90,7 +97,7 @@ a {
   margin-top: 40px;
   position: relative;
   box-shadow: -10px 15px 25px #646260;
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .hero-container:hover {
@@ -186,7 +193,7 @@ a {
   flex-direction: column;
   opacity: 1;
   transform: translateX(0);
-  transition: all 1s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .photos img {
@@ -342,27 +349,6 @@ section .card .about {
   fill: #7e0707;
 }
 
-.custom-shape-divider-bottom-1704328233 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1704328233 svg {
-  position: relative;
-  display: block;
-  width: calc(110% + 1.3px);
-  height: 255px;
-}
-
-.custom-shape-divider-bottom-1704328233 .shape-fill {
-  fill: #7e0707;
-}
-
 .fourth-container {
   color: #fff;
   font-size: 40px;
@@ -431,25 +417,67 @@ section .card .about {
   color: black;
 }
 
-.suggestions {
+.scary-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scary-container img {
+  width: 200px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.big-text h2 {
+  background: linear-gradient(
+    106deg,
+    rgba(198, 197, 213, 1) 0%,
+    rgba(201, 47, 60, 1) 33%,
+    rgba(20, 2, 3, 1) 100%
+  );
+  color: #000000;
+  font-family: "Black Ops One", Arial;
+  font-size: 15vw;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+}
+
+#scrollImage {
+  transition: transform 0.5s ease-in-out;
 }
 
 @media (max-width: 600px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
   .body {
     width: 100%;
     box-sizing: border-box;
   }
 
   .navbar {
-    width: 90%;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+  }
+
+  .navbar-item {
+    margin-right: 5px;
+    padding: 5% 0%;
   }
 
   .navbar .navbar-item-link {
-    font-size: 10px;
+    font-size: 12px;
     margin: 0 auto;
+    margin-right: 15px;
   }
 
   .navbar-item:hover {
@@ -457,7 +485,13 @@ section .card .about {
   }
 
   .social-icon {
-    right: 50px;
+    right: 0px;
+    position: static;
+  }
+
+  .social-icon i {
+    padding-top: 10px;
+    width: 33px;
   }
 
   .hero-container {
