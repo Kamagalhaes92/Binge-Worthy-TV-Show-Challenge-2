@@ -702,6 +702,72 @@ footer p {
   color: white;
 }
 
+.recommendations {
+  width: 100%;
+  height: auto;
+  background-color: #a39d9d;
+  padding: 35px;
+}
+
+.inner-recommendations-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.recommendations h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  font-family: "Black Ops One", Arial;
+}
+
+.container-recommend {
+  width: 250px;
+  height: 500px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #c0bebe;
+  padding: 15px;
+  box-shadow: 10px 10px 25px #222222;
+  margin: 15px;
+}
+
+.img-recommend {
+  padding: 10px;
+  text-align: center;
+}
+
+.img-recommend img {
+  width: 200px;
+  height: 250px;
+  color: #000;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 10px 10px 25px #222222;
+}
+
+.more-info h3 {
+  text-transform: uppercase;
+}
+
+.more-info {
+  background-color: #b3b2b2;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  font-family: "roboto", Arial;
+  height: 200px;
+  box-shadow: 10px 10px 25px #222222;
+}
+
+.fa-brands {
+  font-size: 30px;
+}
+
 @media (max-width: 600px) {
   body,
   html {
@@ -745,6 +811,7 @@ footer p {
   .social-icon i {
     padding-top: 10px;
     width: 33px;
+    color: white;
   }
 
   .hero-container {
@@ -757,6 +824,10 @@ footer p {
   .hero-container:hover {
     box-shadow: 10px 10px 15px #661616;
     transform: scale(0.8);
+  }
+
+  .background-wrap {
+    margin-left: 10px;
   }
 
   .info {
@@ -940,6 +1011,15 @@ footer p {
     margin-right: 20px;
     width: 80px;
     height: 120px;
+  }
+
+  .info-text {
+    width: 400px;
+    flex-wrap: wrap;
+  }
+
+  .fa-brands {
+    font-size: 20px;
   }
 
   footer iframe {
