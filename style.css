@@ -585,7 +585,7 @@ footer p {
 }
 
 .background-img {
-  background-image: url("/Binge-Worthy-TV-Show-Challenge-2/media/mansion-gif.gif");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/814/original/mansion-2.png?1704764039");
   height: 100vh;
   width: 100%;
   /* Center and scale the image nicely */
