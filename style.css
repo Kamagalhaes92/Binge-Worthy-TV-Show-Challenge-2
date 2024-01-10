@@ -207,7 +207,7 @@ a {
 
 .info-2 h3 {
   font-size: 1.5vw;
-  text-align: center;
+  text-align: justify;
   font-family: "roboto", sans-serif;
   font-weight: 100;
 }
@@ -227,14 +227,20 @@ a {
 
 .watch-button {
   display: flex;
-  font-size: 30px;
-  padding: 20px;
-  width: 300px;
+  font-size: 20px;
+  padding: 18px;
+  width: 180px;
   border-radius: 8px;
   margin: 25px auto;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.watch-button:hover {
+  transform: scale(1.1);
+  background: rgb(34, 3, 3);
 }
 
 .photos {
@@ -862,6 +868,11 @@ iframe {
     font-size: 1.1rem;
   }
 
+  .second-container {
+    border: 2px solid black;
+    width: 100vw;
+  }
+
   .second-container img {
     width: 600px;
     height: auto;
@@ -880,20 +891,28 @@ iframe {
 
   .info-2,
   .photos {
-    padding: 2rem;
+    padding: 1rem;
+  }
+
+  .photos {
+    padding: 0;
   }
 
   .info-2 p {
-    font-size: 18px;
+    font-size: 16px;
     font-family: "roboto", sans-serif;
   }
 
   .watch-button {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .photos img {
-    width: 100%;
+    width: 120%;
+  }
+
+  .scroll-bar {
+    padding: 10px;
   }
 
   .cast {
