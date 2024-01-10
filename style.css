@@ -277,6 +277,11 @@ a {
   font-family: "Black Ops One", Arial;
 }
 
+.name-profession a {
+  color: white;
+  font-family: "Black Ops One", Arial;
+}
+
 .swiper {
   width: 100%;
 }
@@ -415,7 +420,7 @@ section .card .about {
 }
 
 .gallery-wrapper {
-  min-height: 70vh;
+  min-height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -425,47 +430,26 @@ section .card .about {
   font-family: Tahoma, sans-serif;
 }
 
-.gallery {
-  display: flex;
-  width: 750px;
-  height: 500px;
-  overflow: hidden;
-  box-shadow: -10px 10px 25px #000;
-  border-radius: 8px;
-}
-
-.gallery img {
-  width: 750px;
-  height: 500px;
+#imageContainer img {
+  width: 60vw;
+  height: 60vh;
   object-fit: cover;
   border-radius: 8px;
+  box-shadow: -10px 10px 25px #2c0202;
 }
 
-.dots {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
+#changeButton {
   margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.dots a {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #000000;
-  opacity: 0.8;
-  transition: opacity ease-in-out 250ms;
-  cursor: pointer;
-}
-
-.dots a:hover {
-  opacity: 1;
-}
-
-.caption {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   font-size: 14px;
-  color: black;
+}
+
+#changeButton p {
+  padding: 10px;
+  font-family: Tahoma, sans-serif;
+  border-radius: 8px;
 }
 
 .scary-container {
@@ -768,6 +752,11 @@ footer p {
   font-size: 30px;
 }
 
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 600px) {
   body,
   html {
@@ -974,14 +963,9 @@ footer p {
     min-height: 30vh;
   }
 
-  .gallery {
-    width: 400px;
-    height: 250px;
-  }
-
-  .gallery img {
-    width: 400px;
-    height: 250px;
+  #imageContainer img {
+    width: 95vw;
+    height: auto;
   }
 
   .background-img {
