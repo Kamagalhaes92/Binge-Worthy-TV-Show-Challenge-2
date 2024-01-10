@@ -293,13 +293,13 @@ a {
 .third-container {
   position: relative;
   width: 450px;
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
   margin: 25px auto;
   position: relative;
   height: 600px;
-  background-color: #000000;
+  background-color: #0e0e0e;
   padding: 30px;
 }
 
@@ -444,12 +444,13 @@ section .card .about {
   margin: 0 auto;
   text-align: center;
   font-size: 14px;
+  border-radius: 8px;
 }
 
 #changeButton p {
   padding: 10px;
   font-family: Tahoma, sans-serif;
-  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
 }
 
 .scary-container {
@@ -905,15 +906,15 @@ iframe {
   }
 
   .card-content {
-    width: 90px;
-    height: 120px;
-    margin-top: 10px;
+    width: 120px;
+    height: 180px;
   }
 
   section .card .image img {
-    height: 80px;
-    width: 80px;
-    border-radius: 0px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin: 15px;
   }
 
   section .card .image {
@@ -928,7 +929,8 @@ iframe {
   }
 
   .name-profession .name {
-    font-size: 8px;
+    font-size: 14px;
+    padding-top: 22px;
   }
 
   .name-profession .profession {
@@ -937,7 +939,7 @@ iframe {
 
   .third-container {
     width: 100%;
-    height: 60px;
+    height: 30vh;
     padding: 2rem;
     margin-top: 4rem;
   }
@@ -1000,6 +1002,7 @@ iframe {
   .info-text {
     width: 400px;
     flex-wrap: wrap;
+    text-align: center;
   }
 
   .fa-brands {
