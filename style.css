@@ -24,7 +24,7 @@ body {
 }
 
 a {
-  color: #121212;
+  color: #fffdfd;
   text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ a {
   transition: 0.5s ease;
   position: relative;
   font-family: "Courier New", Courier, monospace;
-  font-size: 30px;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -100,7 +100,9 @@ a {
 }
 
 .plot {
-  font-size: 20px;
+  font-size: 18px;
+  text-align: justify;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .hero-container {
@@ -199,14 +201,14 @@ a {
 }
 
 .info-2 h2 {
-  font-size: 3vw;
+  font-size: 2.5vw;
   text-align: center;
   font-family: "Black Ops One", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
 .info-2 h3 {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   text-align: justify;
   font-family: "roboto", sans-serif;
   font-weight: 100;
@@ -278,7 +280,7 @@ a {
 .cast {
   padding: 40px;
   text-align: center;
-  font-size: 8rem;
+  font-size: 5rem;
   color: white;
   font-family: "Black Ops One", Arial;
 }
@@ -487,7 +489,7 @@ section .card .about {
 
 .words {
   overflow: hidden;
-  padding: 60px 0;
+  padding: 40px 0;
   background: #a5a3a3;
   white-space: nowrap;
   position: relative;
