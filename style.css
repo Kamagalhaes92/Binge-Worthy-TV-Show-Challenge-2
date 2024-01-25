@@ -8,6 +8,21 @@ body {
   background-color: #000000;
 }
 
+footer h3 {
+  font-size: 22px;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  color: rgba(41, 13, 13, 0.479);
+}
+
+footer p {
+  text-align: center;
+  margin: 30px;
+  color: rgba(41, 13, 13, 0.479);
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+}
+
 #loader-wrapper {
   position: fixed;
   width: 100%;
@@ -405,12 +420,7 @@ section .card .about {
   position: absolute;
   top: 510px;
 }
-.swiper-pagination-bullet {
-  height: 15px;
-  width: 15px;
-  border-radius: 25px;
-  background: #e634d7;
-}
+
 .swiper-button-next,
 .swiper-button-prev {
   opacity: 0.7;
@@ -565,21 +575,6 @@ section .card .about {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 22px;
   background: #ebe8e8;
-}
-
-footer h3 {
-  font-size: 22px;
-  text-align: center;
-  font-family: Roboto, sans-serif;
-  color: rgba(41, 13, 13, 0.479);
-}
-
-footer p {
-  text-align: center;
-  margin: 30px;
-  color: rgba(41, 13, 13, 0.479);
-  font-size: 18px;
-  font-family: Roboto, sans-serif;
 }
 
 .social-links-2 {
