@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "roboto", sans-serif;
 }
 
 body {
@@ -24,8 +25,20 @@ body {
 }
 
 a {
-  color: #fffdfd;
   text-decoration: none;
+  color: #a39d9d;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.creator-title,
+.star-title {
+  font-family: "roboto", sans-serif;
+}
+
+.star-link a {
+  color: #222222;
+  font-weight: bold;
 }
 
 .navbar {
@@ -95,14 +108,30 @@ a {
 
 .info h1 {
   font-size: 60px;
-  font-family: sans-serif;
   text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px #380000;
+  background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/226/original/back.png?1706222547);
+  background-clip: text;
+  background-position: 0 0;
+  animation: movement 25s linear infinite;
+}
+
+@keyframes movement {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 2000px 0;
+  }
 }
 
 .plot {
   font-size: 18px;
   text-align: justify;
   font-family: "Courier New", Courier, monospace;
+  margin-bottom: 10px;
 }
 
 .hero-container {
@@ -140,7 +169,8 @@ a {
   color: rgb(0, 0, 0);
   border-radius: 5px;
   cursor: pointer;
-  margin: 15px auto;
+  margin: 15px 5px;
+  border: 2px solid white;
 }
 
 .info {
@@ -283,6 +313,7 @@ a {
   font-size: 5rem;
   color: white;
   font-family: "Black Ops One", Arial;
+  margin: 15px auto;
 }
 
 .name-profession a {
@@ -291,7 +322,7 @@ a {
 }
 
 .swiper {
-  width: 100%;
+  width: 70%;
 }
 
 .card-content:hover {
@@ -314,7 +345,7 @@ a {
 .card-content {
   border: none;
   width: 300px;
-  height: 450px;
+  height: 380px;
   border-radius: 8px;
   align-items: center;
   background-color: #161616;
@@ -464,7 +495,7 @@ section .card .about {
 .scary-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
 }
 
@@ -706,7 +737,7 @@ footer p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .recommendations h2 {
@@ -755,6 +786,7 @@ footer p {
   font-family: "roboto", Arial;
   height: 200px;
   box-shadow: 10px 10px 25px #222222;
+  text-align: justify;
 }
 
 .fa-brands {
@@ -838,11 +870,11 @@ iframe {
   }
 
   .info-2 h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .info-2 h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .buttons {
@@ -901,12 +933,16 @@ iframe {
   }
 
   .info-2 p {
-    font-size: 16px;
+    font-size: 14px;
     font-family: "roboto", sans-serif;
   }
 
   .watch-button {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .watch-button a {
+    color: #2c2b2b;
   }
 
   .photos img {
@@ -972,6 +1008,17 @@ iframe {
   .flex-container,
   .images-slider {
     width: 100%;
+  }
+
+  .words-slide img {
+    width: 100vw;
+    height: auto;
+  }
+
+  .words:before,
+  .words:after {
+    width: 180px;
+    height: 100%;
   }
 
   .flex-container iframe {
